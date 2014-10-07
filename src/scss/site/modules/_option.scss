@@ -1,0 +1,74 @@
+.option-list {
+  position: relative;
+}
+
+.option-list-items {
+   position: relative;
+   margin-top: 2em;
+
+  @include breakpoint(md) {
+    width: 100%;
+    margin: 3em auto 0 auto;
+  }
+
+  > li {
+    padding: 1em;
+
+    @include breakpoint(md) {
+      width: 48.9%;
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
+
+
+
+}
+
+.option-input {
+  position: absolute;
+  width: pxtoem(42px);
+  height: pxtoem(45px);
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  opacity: 0;
+}
+
+.option-label {
+  position: relative;
+  margin-left: 2.7em;
+}
+
+.option-label:before {
+  content: '';
+  display: block;
+  background: url("../imgs/sprite-input.png") -44px -61px no-repeat;
+  width: 3em;
+  height: 5.2em;
+  position: absolute;
+  left: -3.4em;
+  top: -1.5em;
+}
+
+
+/**
+ Focus state
+**/
+
+.option-input:checked + .option-label:before {
+  background: url("../imgs/sprite-input.png") -44px 0px no-repeat;
+}
+
+
+.option-input:focus + .option-label:before {
+  background: url("../imgs/sprite-input.png") 6px -61px no-repeat;
+}
+
+.option-input:checked:focus + .option-label:before {
+  background: url("../imgs/sprite-input.png") 6px 0px no-repeat;
+}
+
+

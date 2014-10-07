@@ -1,0 +1,74 @@
+
+/**
+ Content Layout
+**/
+.content {
+  width: 100%;
+  position: relative;
+}
+
+.content:after {
+  @extend .decoration-shadow;
+}
+
+.content-media {
+  position: relative;
+  margin-bottom: 1em;
+}
+
+.content-body {
+  width: 100%;
+  background: url('../imgs/content-bg.gif') repeat;
+  padding: pxtoem(25px);
+}
+
+.content-footer {
+  width: 100%;
+  background: url('../imgs/content-footer-bg.gif') repeat;
+  padding: 0.0125em 1.5625em;
+}
+
+.content-video-links {
+  padding: 1em 0;
+}
+
+
+/**
+ Content Elements
+**/
+.content-apps-list {
+  text-align: left;
+  margin-top: 2em;
+  margin-bottom: 1em;
+
+  > li {
+    position: relative;
+    width: 49%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    padding: 1em;
+
+    @include breakpoint(sm) {
+      width: pxtoem(98px);
+    }
+
+  }
+}
+
+.content-apps-image {
+  max-width: 4em;
+  display: inline;
+}
+
+.content-apps-link {
+  text-decoration: none;
+  color: #00B7EC;
+  font-size: 0.82em;
+  font-weight: bold;
+
+  &:hover {
+    color: #09F;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,19 @@
+.hero {
+  position: relative;
+  color:#ffffff;
+}
+
+.hero:after {
+   @extend .decoration-shadow;
+}
+
+.hero-footer {
+  padding: pxtoem(25px);
+  position: relative;
+  background: #202020;
+}
+
+.hero em {
+  font-style: normal;
+  color:#E4B72B;
+}

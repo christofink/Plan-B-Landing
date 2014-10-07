@@ -1,0 +1,24 @@
+{
+  "name": "Sample",
+  "version": "0.0.0",
+  "authors": [
+    "Chris <chris.jerochim@dt.com.au>"
+  ],
+  "description": "Sample bower implementation",
+  "main": "?",
+  "keywords": [
+    "sample"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "twitter-bootstrap-sass": "~3.2.0+2"
+  }
+}

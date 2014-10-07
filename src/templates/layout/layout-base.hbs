@@ -1,0 +1,112 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+
+    <meta name="description" content="RBT means you need a plan B. If you're drinking, don't drive." />
+    <meta name="keywords" content="RBT, Plan B,drinking,taxi,just,walk,accomodation,transport,infp,131500" />
+    <meta name="author" content="Transport for NSW" />
+    <meta name="robots" content="index, follow" />
+
+    <title>{{title}}</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="js/modernizr/modernizr.js"></script>
+
+    <link rel="stylesheet" href="css/screen.css"/>
+
+</head>
+<body>
+
+
+   <div class="container-fluid">
+       {{> body}}
+   </div>
+
+
+
+    <!-- scripts -->
+   <script src="js/jquery-1.9.1.js"></script>
+   <script src="js/default.js"></script>
+   <div id="fb-root"></div>
+    <!-- // Scripts -->
+
+
+   <script type='text/javascript'>
+       //<![CDATA[
+       // load all.js asynchronously
+       (function () {
+           var e = document.createElement('script');
+           e.type = 'text/javascript';
+           e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+           e.async = true;
+           document.getElementById('fb-root').appendChild(e);
+       } ());
+
+
+       // once all.js is loaded
+       window.fbAsyncInit = function () {
+           // init FB object
+           FB.init({
+               appId: appId,
+               status: true,
+               cookie: true,
+               xfbml: true,
+               oauth: true,
+               frictionlessRequests: true
+           });
+
+
+           FB.getLoginStatus(function (response) {
+               if (!response.authResponse) {
+                   log('User has not logged in yet');
+               } else {
+                   log('User has already logged in.');
+               }
+           });
+       };
+       //]]>
+   </script>
+
+
+   <!-- GOOGLE -->
+   <script type="text/javascript">
+       var _gaq = _gaq || [];
+       _gaq.push(['_setAccount', 'UA-34153169-1']);
+       _gaq.push(['_trackPageview']);
+
+       (function () {
+           var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+           ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+           var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+       })();
+
+
+
+       //POST TRACK EVENT
+       function recordOutboundLink(link, category, action) {
+           try {
+               _gaq.push(['_trackEvent', category, action]);
+               setTimeout('document.location = "' + link.href + '"', 100)
+           } catch (err) {
+
+           }
+       }
+   </script>
+   <!-- // GOOGLE -->
+   <script type='text/javascript'>
+       var ebRand = Math.random() + '';
+       ebRand = ebRand * 1000000;
+       //<![CDATA[
+       document.write('<scr' + 'ipt src="HTTP://bs.serving-sys.com/BurstingPipe/ActivityServer.bs?cn=as&amp;ActivityID=232141&amp;rnd=' + ebRand + '"></scr' + 'ipt>');
+       //]]>
+   </script>
+
+
+
+</body>
+</html>

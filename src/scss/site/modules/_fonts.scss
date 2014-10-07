@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'lapresse';
+  src: url('../fonts/lapresse-webfont.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  url('../fonts/lapresse-webfont.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
+
+.font-header-feature {
+  color:#864A33;
+  font-size: pxtoem(30px);
+}
+
+.font-header-feature-large {
+  font-size: 1.6em;
+}
+
+
+.font-header-highlight {
+  color:#222;
+}
+
+.font-header-simple {
+  font-family: $font-family-sans-serif;
+  color:#222;
+}
+
+.font-header-share {
+  font-size: 1.5em;
+  line-height: 1.3em;
+  margin-top: 0;
+
+  @include breakpoint(md) {
+    line-height: 0.9em;
+  }
+}
+
+
+
+
+.font-feature-link {
+  text-decoration: underline;
+  font-size: 0.9em;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,18 @@
+.btn {
+  position: relative;
+  display: inline-block;
+}
+
+.btn-share {
+  background: url("../imgs/sprite-btn-share.png") 0 0 no-repeat;
+  width: 8.7em;
+  height: 2.6em;
+  @include breakpoint(md) {
+    top: -0.5em;
+  }
+
+}
+
+.btn-share:hover, .btn-share:focus {
+  background: url("../imgs/sprite-btn-share.png") -139px 0 no-repeat;
+}

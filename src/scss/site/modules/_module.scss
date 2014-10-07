@@ -1,0 +1,23 @@
+/*doc
+---
+title: Module ELement
+name: moduleelement
+category: Modules
+---
+
+This is an example of a module
+
+```html_example
+
+<div class="module">
+  ...
+</div>
+
+```
+
+*/
+
+.module {
+  position: relative;
+  display: block;
+}
