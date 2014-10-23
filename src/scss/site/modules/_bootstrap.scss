@@ -3,3 +3,10 @@
   padding-left: 0;
   padding-right: 0;
 }
+
+.lt-ie9 {
+  .container-fluid {
+    max-width: none;
+    width: 48.9em;;
+  }
+}

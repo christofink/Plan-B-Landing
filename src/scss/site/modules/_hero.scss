@@ -1,10 +1,95 @@
 .hero {
   position: relative;
   color:#ffffff;
+  overflow: hidden;
 }
 
 .hero:after {
    @extend .decoration-shadow;
+}
+
+
+.hero-title-primary {
+  position: relative;
+  display: block;
+  background: url('../imgs/Plan_A.png') center no-repeat;
+  background-size: 100%;
+  max-width: 7.1em;
+  width: 100%;
+  height: 3.8em;
+  margin: 0 auto;
+
+  @include breakpoint(sm) {
+    display: inline-block;
+    margin-top: 1.1em;
+    width: 47.5%;
+    height: 6em;
+  }
+
+
+  @include breakpoint(md) {
+    margin-top: 2em;
+    max-width: none;
+  }
+}
+
+.hero-title-secondary {
+  position: relative;
+  display: block;
+  background: url('../imgs/coaster.png') center no-repeat;
+  background-size: 100%;
+  margin: 0 auto;
+  height: 10em;
+  max-width: 10em;
+
+
+  @include breakpoint(sm) {
+    display: inline-block;
+    vertical-align: top;
+    width: 51%;
+    height: 11em;
+    max-width: none;
+  }
+
+  @include breakpoint(md) {
+    height: 12em;
+  }
+
+}
+
+
+.hero-glass {
+  position: absolute;
+  display: block;
+  background: url("../imgs/cup.png") center no-repeat;
+  background-size: 100%;
+  width: 22em;
+  height: 18.5em;
+
+  top: -0.6em;
+  right: -3em;
+  z-index: 100;
+
+  @include breakpoint(sm) {
+    top: 0;
+    left: 0;
+    right: auto;
+  }
+
+}
+
+
+
+.hero-body  {
+  position: relative;
+  background: url('../imgs/wood.jpg') center no-repeat;
+  min-height: pxtoem(350px);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  padding: 1em;
 }
 
 .hero-footer {
@@ -16,4 +101,21 @@
 .hero em {
   font-style: normal;
   color:#E4B72B;
+}
+
+
+.lt-ie9 {
+
+  .hero-title-primary {
+    max-width: none;
+    width: 391px;
+    height: 194px;
+  }
+
+  .hero-title-secondary {
+    max-width: none;
+    width: 330px;
+    height: 332px;
+  }
+
 }

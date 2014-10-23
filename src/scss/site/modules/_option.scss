@@ -5,6 +5,7 @@
 .option-list-items {
    position: relative;
    margin-top: 2em;
+  -webkit-transform: translate3d(0,0,0);
 
   @include breakpoint(md) {
     width: 100%;
@@ -72,3 +73,29 @@
 }
 
 
+.lt-ie9 {
+
+  .option-input {
+    position: relative;
+    width: auto;
+    height: auto;
+    overflow: visible;
+
+  }
+
+  .option-label {
+    margin: 0;
+  }
+
+  .option-label:before {
+    background: none;
+    width: auto;
+    height: auto;
+    position: relative;
+    left: auto;
+    top: auto;
+  }
+
+
+
+}

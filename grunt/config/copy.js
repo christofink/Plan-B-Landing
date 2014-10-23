@@ -24,7 +24,10 @@ module.exports = function(grunt, options) {
                 { expand: true, cwd: '<%= paths.src %>/imgs/', src: '**/*.*', dest: '<%= paths.www %>/imgs' },
 
                 // Fonts
-                { expand: true, cwd: '<%= paths.src %>/fonts/', src: '**/*.*', dest: '<%= paths.www %>/fonts' }
+                { expand: true, cwd: '<%= paths.src %>/fonts/', src: '**/*.*', dest: '<%= paths.www %>/fonts' },
+
+                //Copy over any documents
+                { expand: true, cwd: '<%= paths.src %>/documents/', src: '**/*.*', dest: '<%= paths.www %>/documents' }
             ]
         },
 
