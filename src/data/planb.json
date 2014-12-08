@@ -82,13 +82,13 @@
 
 
         {
-            "image": "imgs/icon-juanti-sydney.png",
-            "alt" : "Jaunt! Sydney+ App",
-            "text": "Jaunt! Sydney+",
+            "image": "imgs/icon-nextThere.png",
+            "alt" : "NextThere App",
+            "text": "NextThere",
             "apps": [
                 {
                     "text": "iPhone",
-                    "url": "https://itunes.apple.com/au/app/jaunt!-sydney-travel-public/id583693144?mt=8",
+                    "url": "https://itunes.apple.com/au/app/nextthere/id870393074?ls=1&mt=8",
                     "title": "App Store"
                 }
             ]
