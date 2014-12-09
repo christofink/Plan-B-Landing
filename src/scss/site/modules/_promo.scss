@@ -1,0 +1,75 @@
+.promo {
+  position: relative;
+  background: url('../imgs/promo-bg.png') center center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+.promo-content {
+  position: relative;
+  margin: 0 auto;
+  width: 15.8em;
+  height: 100%;
+  z-index: 100;
+
+  @include breakpoint(md) {
+    margin: 0 0 0 3.2em;
+  }
+}
+
+.promo-title {
+  position: relative;
+  display: inline-block;
+  width: 7.9em;
+  height: 5.875em;
+  background: url("../imgs/promo-title.png") center center no-repeat;
+  background-size: 100%;
+  margin: -0.5em 0 0.9em 0.3em;
+
+  @include breakpoint(md) {
+    margin: -0.5em 0 0 0.3em;
+  }
+}
+
+.promo-cta {
+  position: relative;
+  display: block;
+  margin: 1em auto 0.1em auto;
+  background: url("../imgs/promo-cta.gif") center center no-repeat;
+  background-size: 100%;
+  width: 11.9375em;
+  height: 2.5625em;
+}
+
+.promo-weapons {
+  position: relative;
+  display: block;
+  background: url("../imgs/promo-weapons.png") center center no-repeat;
+  background-size: 100%;
+  width: 20.4375em;
+  height: 7.9375em;
+  margin: -3.2em auto 0 -4.2em;
+}
+
+
+.promo-team {
+  position: absolute;
+  background: url('../imgs/promo-team.png') center center no-repeat;
+  background-size: 100%;
+  width: 415px;
+  height: 281px;
+  display: none;
+
+@include breakpoint(md) {
+  display: block;
+  position: absolute;
+  right: 0.8em;
+  bottom: 0;
+
+}
+
+
+}
