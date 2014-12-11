@@ -1,5 +1,6 @@
 .promo {
   position: relative;
+  display: block;
   background: url('../imgs/promo-bg.png') center center no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -10,6 +11,7 @@
 
 .promo-content {
   position: relative;
+  display: block;
   margin: 0 auto;
   width: 15.8em;
   height: 100%;
@@ -21,6 +23,7 @@
 }
 
 .promo-title {
+  @extend h2;
   position: relative;
   display: inline-block;
   width: 7.9em;
@@ -50,7 +53,7 @@
 .promo-cta {
   position: relative;
   display: block;
-  margin: 1em auto 0.1em auto;
+  margin: 1em auto 0 auto;
   background: url("../imgs/promo-cta.gif") center center no-repeat;
   background-size: 100%;
   width: 11.9375em;
